@@ -1,15 +1,19 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import image from '../asset/abc.jpg'
 import Image from 'next/image'
-import "../asset/style.scss"
+
+
+
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Easy Frontend</title>
+      </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org">Easy Frontend!</a>
         </h1>
 
         <p className={styles.description}>
@@ -27,7 +31,7 @@ export default function Home() {
             <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
-          
+
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
